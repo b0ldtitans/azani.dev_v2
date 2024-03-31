@@ -1,0 +1,118 @@
+import { useRef } from "react";
+import "./services.scss";
+import { motion } from "framer-motion";
+
+const variants = {
+  initial: {
+    x: -500,
+    y: 100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const Services = () => {
+  const ref = useRef();
+
+  return (
+    <motion.div
+      className="services"
+      variants={variants}
+      initial="initial"
+      ref={ref}
+      animate={"animate"}
+    >
+      <motion.div className="textContainer" variants={variants}>
+        {/* <p>
+          I focus on helping your brand grow
+          <br /> and move forward
+        </p>
+        <hr /> */}
+      </motion.div>
+      <motion.div className="titleContainer" variants={variants}>
+        <div className="title">
+          <img src="/people.webp" alt="" />
+          <h1>
+            Create
+            <motion.b whileHover={{ color: "#A07CFF" }}> Unique</motion.b>{" "}
+            Website
+          </h1>
+        </div>
+        <div className="title">
+          <h1>
+            <motion.b whileHover={{ color: "#CBF281" }}>For Your</motion.b>{" "}
+            Business.
+          </h1>
+          <button>WHAT I DO?</button>
+        </div>
+      </motion.div>
+      <motion.div className="listContainer" variants={variants}>
+        <motion.div className="box">
+          <h2>Front End Development</h2>
+          <div>
+            <img src="/next-js-svgrepo-com.svg" alt="" width={80} height={80} />
+            <img
+              src="/react-javascript-js-framework-facebook-svgrepo-com.svg"
+              alt=""
+              width={80}
+              height={80}
+            />
+          </div>
+          <p>
+            Crafting stunning and interactive user interfaces that bring your
+            ideas to life. From eye-catching designs to seamless user
+            experiences, we make the web a better place, one pixel at a time.
+          </p>
+        </motion.div>
+        <motion.div className="box">
+          <h2>Back End Development</h2>
+          <div>
+            <img src="/node-js-svgrepo-com.svg" alt="" width={80} height={80} />
+            <img
+              src="/mysql-logo-svgrepo-com.svg"
+              alt=""
+              width={120}
+              height={120}
+            />
+            <img
+              src="/postgresql-svgrepo-com.svg"
+              alt=""
+              width={80}
+              height={80}
+            />
+          </div>
+          <p>
+            Behind the scenes, we build the engine that powers your digital
+            dreams. Seamlessly connecting databases, handling complex logic, and
+            ensuring everything runs smoothly behind the curtain.
+          </p>
+        </motion.div>
+        <motion.div className="box">
+          <h2>Mobile App Development</h2>
+          <img
+            src="/react-javascript-js-framework-facebook-svgrepo-com.svg"
+            alt=""
+            width={80}
+            height={80}
+          />
+          <p>
+            In a world where apps rule, we&apos;re your app&apos;s best friend.
+            From brainstorming the next big feature to fine-tuning the tiniest
+            detail, we create apps that fit right into people&apos;s pockets and
+            lives.
+          </p>
+        </motion.div>
+      </motion.div>
+    </motion.div>
+  );
+};
+
+export default Services;
