@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import Links from "./links/Links";
 import "./sidebar.scss";
 import ToggleButton from "./toggleButton/ToggleButton";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { FaMedium } from "react-icons/fa6";
 
 const variants = {
   open: {

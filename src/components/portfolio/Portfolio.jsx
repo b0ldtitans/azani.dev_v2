@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import "./portfolio.scss";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const items = [
   {
@@ -40,7 +39,6 @@ const items = [
 
 const Single = ({ item }) => {
   const ref = useRef();
-  const navigate = useNavigate();
 
   const { scrollYProgress } = useScroll({
     target: ref,

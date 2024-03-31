@@ -1,6 +1,9 @@
 import { useRef } from "react";
 import "./services.scss";
 import { motion } from "framer-motion";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
 
 const variants = {
   initial: {
@@ -51,20 +54,15 @@ const Services = () => {
             <motion.b whileHover={{ color: "#CBF281" }}>For Your</motion.b>{" "}
             Business.
           </h1>
-          <button>WHAT I DO?</button>
+          {/* <button>WHAT I DO?</button> */}
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div className="box">
           <h2>Front End Development</h2>
           <div>
-            <img src="/next-js-svgrepo-com.svg" alt="" width={80} height={80} />
-            <img
-              src="/react-javascript-js-framework-facebook-svgrepo-com.svg"
-              alt=""
-              width={80}
-              height={80}
-            />
+            <TbBrandNextjs size={80} color="white" />
+            <FaReact size={80} color="#00D8FE" />
           </div>
           <p>
             Crafting stunning and interactive user interfaces that bring your
@@ -75,7 +73,7 @@ const Services = () => {
         <motion.div className="box">
           <h2>Back End Development</h2>
           <div>
-            <img src="/node-js-svgrepo-com.svg" alt="" width={80} height={80} />
+            <FaNode size={80} color="#8CC74A" />
             <img
               src="/mysql-logo-svgrepo-com.svg"
               alt=""
@@ -85,8 +83,8 @@ const Services = () => {
             <img
               src="/postgresql-svgrepo-com.svg"
               alt=""
-              width={80}
-              height={80}
+              width={70}
+              height={70}
             />
           </div>
           <p>
@@ -98,7 +96,7 @@ const Services = () => {
         <motion.div className="box">
           <h2>Mobile App Development</h2>
           <img
-            src="/react-javascript-js-framework-facebook-svgrepo-com.svg"
+            src="/toppng.com-react-native-svg-transformer-allows-you-import-svg-aperture-science-innovators-logo-986x1055.png"
             alt=""
             width={80}
             height={80}

@@ -214,8 +214,10 @@ export default function Resume() {
           </div>
           <div className="box">
             <div className="text">
-              <h3 className="univ">Procurement Officer</h3>
-              <h4 className="major">Hotel Administration</h4>
+              <h3 className="univ">Bandung Institute of Tourism</h3>
+              <h4 className="major">
+                Bachelor&apos;s Degree in Hotel Administration
+              </h4>
               <ul>
                 <li>GPA 3.31 / 4.0</li>
                 <li>

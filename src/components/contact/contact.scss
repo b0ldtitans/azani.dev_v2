@@ -68,7 +68,7 @@
         padding: 20px;
         background-color: transparent;
         border: 1px solid white;
-        color: white;
+        color: #cbf281;
         border-radius: 5px;
 
         @include mobile {
@@ -82,7 +82,7 @@
         background-color: #a17dff;
         cursor: pointer;
         font-weight: 500;
-        transition: color 0.5s ease-in;
+        transition: all 0.4s ease;
 
         @include mobile {
           padding: 10px;
@@ -93,6 +93,16 @@
       }
     }
   }
+}
+
+.email {
+  color: white;
+  transition: color 0.2s ease;
+  width: 20%;
+}
+
+.email:hover {
+  color: #a17dff;
 }
 
 .loader {

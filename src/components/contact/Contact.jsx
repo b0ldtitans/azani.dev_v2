@@ -52,11 +52,13 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let’s work together</motion.h1>
+        <motion.h1 variants={variants}>Let&apos;s Grow together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <a href="mailto:thareq@azani.dev">thareq@azani.dev</a>
+            <a className="email" href="mailto:thareq@azani.dev">
+              thareq@azani.dev
+            </a>
           </div>
         </motion.div>
         <motion.div className="item" variants={variants}>
@@ -87,6 +89,7 @@ const Contact = () => {
           <textarea
             disabled={sending}
             rows={8}
+            required
             placeholder="Message"
             name="message"
           />
