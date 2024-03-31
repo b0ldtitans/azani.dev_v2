@@ -1,5 +1,5 @@
 import "./app.scss";
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
 import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
@@ -8,6 +8,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 import { Routes, Route } from "react-router-dom";
 const Resume = lazy(() => import("./components/resume/Resume"));
+const NotFound = lazy(() => import("./components/notFound/NotFound"));
 
 export const AppComponent = () => {
   return (
@@ -37,11 +38,13 @@ export const AppComponent = () => {
 
 export default function App() {
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path="/" element={<AppComponent />} />
         <Route path="/resume" element={<Resume />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
-    </>
+    </Suspense>
   );
 }
