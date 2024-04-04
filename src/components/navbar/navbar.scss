@@ -49,9 +49,22 @@
       align-items: center;
       gap: 2rem;
 
+      span {
+        cursor: pointer;
+        font-weight: 700;
+      }
+
+      span:hover {
+        color: #cbf281;
+      }
+
       @include mobile {
         display: none;
       }
+    }
+
+    .navlink > a {
+      font-weight: 400;
     }
 
     .navlink > a:hover {

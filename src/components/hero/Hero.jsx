@@ -1,5 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
 
 const textVariants = {
   initial: {
@@ -34,11 +35,18 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>Thareq Muhammad Azani</motion.h2>
           <motion.h1 style={{ color: "#CCF381" }} variants={textVariants}>
             Fullstack Web Developer{" "}
             <sub style={{ color: "white", fontSize: "4rem" }}>•</sub>
           </motion.h1>
+          <motion.h2
+            onClick={() => toast.success("TEST")}
+            className=" border-2 border-white"
+            variants={textVariants}
+          >
+            With a focus on fullstack development, I engineer solutions that are
+            solid, scalable, and elevate user experiences.
+          </motion.h2>
           <motion.div variants={textVariants} className="buttons">
             <motion.a href="/resume" variants={textVariants}>
               My resume
@@ -50,7 +58,7 @@ const Hero = () => {
         </motion.div>
       </div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        {/* <img src="/hero.png" alt="" /> */}
       </div>
     </div>
   );

@@ -8,7 +8,6 @@ const Navbar = () => {
   const items = ["Homepage", "Services", "Portfolio", "Contact"];
   return (
     <div className="navbar">
-      {/* Sidebar */}
       <Sidebar />
       <div className="wrapper">
         <motion.a

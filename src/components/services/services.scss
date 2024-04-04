@@ -129,6 +129,14 @@
         }
       }
 
+      h2 {
+        transition: color 0.2s ease-in-out;
+      }
+
+      h2:hover {
+        color: #a17eff;
+      }
+
       button {
         padding: 10px;
         background-color: orange;

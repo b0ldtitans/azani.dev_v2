@@ -103,6 +103,7 @@ body {
 
     li {
       list-style: none;
+      display: flex;
       position: relative;
       margin: 10px 0;
 
@@ -119,11 +120,9 @@ body {
   }
 }
 
-.skills {
-  ul {
-    li {
-      list-style: square;
-    }
+.skill-list {
+  li {
+    list-style: square;
   }
 }
 

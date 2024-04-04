@@ -57,8 +57,16 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <div style={{ display: "flex", gap: "1rem" }}>
-              {item.link && <a>View</a>}
-              {item.src && <a>Source Code</a>}
+              {item.link && (
+                <a href={item.link} target="_blank">
+                  View
+                </a>
+              )}
+              {item.src && (
+                <a href={item.src} target="_blank">
+                  Source Code
+                </a>
+              )}
             </div>
           </motion.div>
         </div>

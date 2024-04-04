@@ -1,10 +1,11 @@
 import "./Resume.scss";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaTelegram } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
 import { IoPinSharp } from "react-icons/io5";
 import { RiDownloadLine } from "react-icons/ri";
 
 export default function Resume() {
+  document.title = "My Résumé - Thareq Muhammad Azani";
   return (
     <main className="container ">
       {/* LEFT SIDE */}
@@ -31,6 +32,14 @@ export default function Resume() {
             </li>
             <li>
               <span className="icon">
+                <FaTelegram />
+              </span>
+              <a className="text" href="https://t.me/thareqazani">
+                @thareqazani
+              </a>
+            </li>
+            <li>
+              <span className="icon">
                 <FaLinkedin style={{ color: "#0b65c2" }} />
               </span>
               <a
@@ -51,7 +60,7 @@ export default function Resume() {
           </ul>
         </div>
         <div className="contactInfo skills">
-          <h3 className="title">Skills</h3>
+          <h3 className="title skill-list">Skills</h3>
           <ul>
             <li>JavaScript</li>
             <li>TypeScript</li>

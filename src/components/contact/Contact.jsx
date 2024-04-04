@@ -62,6 +62,14 @@ const Contact = () => {
           </div>
         </motion.div>
         <motion.div className="item" variants={variants}>
+          <h2>Telegram</h2>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <a className="email" href="https://t.me/thareqazani">
+              @thareqazani
+            </a>
+          </div>
+        </motion.div>
+        <motion.div className="item" variants={variants}>
           <h2>Address</h2>
           <span>DKI Jakarta, Indonesia</span>
         </motion.div>
